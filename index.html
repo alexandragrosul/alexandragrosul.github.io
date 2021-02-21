@@ -6,72 +6,74 @@
 </style>
 <link rel="stylesheet" href="style.css">
 <script src="app.js" defer></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 </head>
-<body style="background-color: lightpink!important;">
+<body style="background-color:  rgb(182, 255, 182)!important;">
   <header>
-    
+    Blogul meu despre JavaScript, Pictura, Muzica si Pisoiul meu
   </header>
   <nav>
     <div class="container">
-      <div>
-          <span>Muzica</span>
-          <span>Programarea</span>
-          <span>Pictura</span>
-          <span>Sculptura</span>
-          <span>Motanul meu</span>
+      <div class="menu">
+          <a href="#music"><div>Muzica</div></a>
+          <a href="#coding"><div>Programarea</div></a>
+          <a href="#picture"><div>Pictura</div></a>
+          <a href="#sculptura"><div>Sculptura</div></a>
+          <a href="#cat"><div>Motanul meu</div></a>
       </div>
     </div>
 
   </nav>
   <section>
     <div class="container">
-      <h1>Pagina web despre programare pe limbajul JavaScript si despre Muzica, Pictura , Sculptura si despre motanul sphinx</h1>
-      <p>Pe data de 10.01.21 eu am inceput chalenge 100 days of code</p>
-      <img src="https://camo.githubusercontent.com/53ff12ecd9492d7d051fb077fa177f7f218b51e640d386bf04c7fa2f3475b9ba/68747470733a2f2f692e696d6775722e636f6d2f6477594f5030422e6a7067" alt="">
-      <p>10.01.21 - am realizat practica cum sa caut in document html tag si class fara id</p>
-      <p>11.01.21 - am realizat practica cu radio butoane, selectarea unului din ele si afisarea elementului afisat.Daca coborati mai jos o sa vedeti un exemplu cu persici mere si pere</p>
-      <p>12.01.21 - am realizat generator de stilurile css border-radius</p>
-      <p>13.01.21 - am facut ceva dar nu tin minte ce!</p>
-      <p>14.01.21 - am facut ceva dar nu tin minte ce!</p>
-      <p>15.01.21 - am inceput sa realizez salvarea obiectelor cu picturile si desenele de natura statica</p>
-      <p>16.01.21 - am finisat sa realizez salvarea obiectelor cu picturile si desenele de natura statica</p>
-      <p>17.01.21 - am finisat sa realizez salvarea obiectelor cu picturile mele si am facut si cu functie care are um buton si care numara suma numerelor date</p>
+      <h1>Pagina web despre programare limbajul JavaScript, despre Muzica, Pictura , Sculptura si despre motanul sphinx</h1>
     </div>
   </section>
   <section>
-    <h2>Muzica</h2>
-    <p>Eu invat limbaj de programare: JavaScript </p>
+    <h2 id="music"> Muzica </h2>
+    <p>Eu invat sa cant la pian, mie mi se pare ca cant binisor si inca mai trebuie sa ma antrenez mai mult! </p>
   </section>
   <section>
-    <h2>Programarea</h2>
-    <p>Eu invat limbaj de programare: JavaScript </p>
+    <h2 id="coding"> Programarea </h2>
+    <p>Eu am invatat limbaj de programare: JavaScript, la mine se primeste der trebuie sa put capul in miscare, aici trebuie sa stii si logica si matematica si asa mai departe  </p>
   </section>
   <section>
-    <h2>Pictura</h2>
-    <p>Eu invat limbaj de programare: JavaScript </p>
+    <h2 id="picture"> Pictura </h2>
+    <p>Eu merg la scoala de pictura, imi place cel mai mult sa desenez eu la un conurs am primit locul 2, desenul meu a fost trimis in Romania...</p>
   </section>
   <section>
-    <h2>Sculptura</h2>
-    <p>Eu invat limbaj de programare: JavaScript </p>
+    <h2 id="sculptura"> Sculptura </h2>
+    <p>Eu de asemenea vineri dupa pictura tot acolo la ora 5:30 am sculptura, acola am facut o masca de leouaica si fac acum o vaza </p>
+    <div class="images">
+      <div><a data-fancybox="gallery" href="images/sculptura1.jpg"><img src="images/sculptura1.jpg" alt=""></a></div>
+    </div>
   </section>
   <section>
-    <h2>Motanul meu</h2>
-    <p>Eu invat limbaj de programare: JavaScript </p>
+    <h2 id="cat"> Motanul meu </h2>
+    <p>Eu am un motan pe nume Simba, el este foarte jucaus si prietenos.Este foarte amuzant. El este fara blana si de aceia bunica ea facut imbracaminte. Iarna este foarte frig de aceia el sta intotdeauna pe calorifer. Ii place sa manance mancare de tot felu in afara de salata! </p>
+    <div class="images">
+      <div><a data-fancybox="gallery" href="images/simba1.jpg"><img src="images/simba1.jpg" alt=""></a></div>
+      <div><a data-fancybox="gallery" href="images/simba2.jpg"><img src="images/simba2.jpg" alt=""></a></div>
+      <div><a data-fancybox="gallery" href="images/simba3.jpg"><img src="images/simba3.jpg" alt=""></a></div>
+      <div><a data-fancybox="gallery" href="images/simba4.jpg"><img src="images/simba4.jpg" alt=""></a></div>
+      <div><a data-fancybox="gallery" href="images/simba5.jpg"><img src="images/simba5.jpg" alt=""></a></div>
+      <div><a data-fancybox="gallery" href="images/simba6.jpg"><img src="images/simba6.jpg" alt=""></a></div>
+      <div><a data-fancybox="gallery" href="images/simba7.jpg"><img src="images/simba7.jpg" alt=""></a></div>
+      <div><a data-fancybox="gallery" href="images/simba8.jpg"><img src="images/simba8.jpg" alt=""></a></div>
+    </div>
   </section>
-  <section>
-    <p><input type="radio" name="prim" value="apples">Apple</p>
-    <p><input type="radio" name="prim" value="pears">Pear</p>
-    <p><input type="radio" name="prim" value="peachs">Peach</p>
-  </section>
+  
 
   <footer>
-      <p>This web site is made by Alexandra</p>
+      <h3>    This web site is made by Alexandra    </h3>
   </footer>
   <script>
-  
+    
   </script>
-  <button id="one">Apasa</button>
-  <h2>Dupa ce alegeti unul dintre fructe, apasati pe butonul pe care scrie - 'Apasa'</h2>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+  
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   
 </body>
 </html>
