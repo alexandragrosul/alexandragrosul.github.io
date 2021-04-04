@@ -1,21 +1,10 @@
-let radio = document.getElementsByName('prim');
-
-for(let i = 0; i < radio.length; i++){
-    radio[i].onchange = testRadio;
-}
-
-function testRadio (){
-    console.log(this.value);
-}
-
-document.getElementById('one').onclick = checkRadio;
-
-function checkRadio (){
-    let m = document.getElementsByName('prim');
-    for(let i =0; i < m.length; i++){
-        if(m[i].checked) {
-            alert(m[i].value);
-            break;
-        }
-    }
-}
+const sun = document.getElementsByClassName('btn-toggle')[0];
+const moon = document.getElementsByClassName('btn-toggle')[1];
+sun.addEventListener("click", function () {
+    document.body.classList.toggle('dark-theme');
+    //document.header.classList.toggle('dark-theme');
+})
+moon.addEventListener("click", function () {
+    document.body.classList.toggle('dark-theme');
+    // document.body.header.classList.toggle('dark-theme');
+})

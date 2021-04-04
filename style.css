@@ -1,8 +1,26 @@
 body { 
-    background-color: rgba(7, 238, 246, 0.493);
+   background-color:  rgb(182, 255, 182);
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Dancing Script', cursive;
   }
+
+body.dark-theme {
+  color: white;
+  background-color: #121212;
+}
+
+p {
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
 
 header {
   background-color: rgb(26, 70, 5);
@@ -12,12 +30,40 @@ header {
   color: rgb(162, 221, 198);
 }
 
+body.dark-theme header {
+  background-color: ghostwhite;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #121212;
+}
 
-footer {
-  background-color: rgb(30, 245, 137);
+body.dark-theme .menu div:hover {
+  background-color: darksalmon;
+  border-style: solid ;
+}
+
+body.dark-theme .menu div {
+  background-color: #121212;
+  font-size: larger;
+  color: white;
+  padding: 15px;
+  border-style: solid ;
+}
+
+body.dark-theme footer {
+  background-color: ghostwhite;
   padding: 10px;
   text-align: center;
-  color: rgb(16, 26, 121);
+  color: #121212;
+}
+
+
+footer {
+  background-color: rgb(26, 70, 5);
+  padding: 10px;
+  text-align: center;
+  color: white;
 }
 
 section {
@@ -35,6 +81,7 @@ section {
   justify-content: space-evenly;
   padding-top: 20px;
   flex-wrap: wrap;
+  font-size: 25px;;
 }
 
 .menu div {
