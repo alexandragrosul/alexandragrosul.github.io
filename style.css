@@ -1,8 +1,8 @@
 body { 
-   background-color:  rgb(182, 255, 182);
+   background-color:  rgb(235, 222, 232);
     margin-left: auto;
     margin-right: auto;
-    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Montserrat', sans-serif;
   }
 
 body.dark-theme {
@@ -23,11 +23,11 @@ h2 {
 }
 
 header {
-  background-color: rgb(26, 70, 5);
+  background-color: rgb(245, 119, 245);
   padding: 30px;
   text-align: center;
   font-size: 35px;
-  color: rgb(162, 221, 198);
+  color: rgb(64, 4, 92);
 }
 
 body.dark-theme header {
@@ -60,7 +60,7 @@ body.dark-theme footer {
 
 
 footer {
-  background-color: rgb(26, 70, 5);
+  background-color: rgb(107, 47, 109);
   padding: 10px;
   text-align: center;
   color: white;
@@ -85,7 +85,7 @@ section {
 }
 
 .menu div {
-  background-color: darkgreen;
+  background-color: rgb(230, 109, 201);
   font-size: larger;
   color: white;
   padding: 15px;
@@ -97,7 +97,7 @@ section {
 }
 
 .menu div:hover {
-  background-color: yellowgreen;
+  background-color: rgb(196, 85, 211);
   border-style: solid ;
 }
 
