@@ -6,20 +6,22 @@
   
   </style>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <script src="app.js" defer></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body >
-  <header>
+  <!-- <header>
 
     <img class="btn-toggle" src="images/sun.png" alt="">
     Blogul meu despre JavaScript, Pictura, Muzica si Pisoiul meu
-    <img class="btn-toggle" src="images/moon.png" alt="">
+    <img class="btn-toggle" src="images/moon.png" alt=""> -->
     <!-- <button class="btn-toggle">Dark-Mode</button> -->
-  </header>
+  <!-- </header>
   <nav>
     <div class="container">
       <div class="menu">
@@ -31,31 +33,72 @@
       </div>
     </div>
 
+  </nav> -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Alexandra's site</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#coding">Programming</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#music">Music</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#picture">Drawing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cat">My cat</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          <img id="themeSwitch" class="btn-toggle" src="images/moon.png" alt="">
+        </span>
+      </div>
+    </div>
   </nav>
   <section>
     <div class="container">
-      <h1>Pagina web despre programare limbajul JavaScript, despre Muzica, Pictura , Sculptura si despre motanul sphinx</h1>
+      <h1>Web page about: Programming, Music, Painting, Sculpture and my sphinx cat</h1>
     </div>
   </section>
   <section>
-    <h2 id="music"> Muzica </h2>
-    <p>Eu invat sa cant la pian.Cant melodii vesele si unele mai triste! </p>
-  </section>
-  <section>
-    <h2 id="coding"> Programarea </h2>
-    <p>Eu am invatat limbaj de programare JavaScript. Acum cand am invațat totul am inteles ca nu este atat de greu.Acum am inceput sa invat canvas.Este foarte interesant cum poti sa desenezi cercuri in volum sau simplu 2D , patrete si diferite forme giometrice sau corpuri!Eu o sa va las un link pe care sa treceti si o sa puteti sa vedeti unele jocuri facute de mine
+    <h2 id="coding"> Programming </h2>
+    <p>I learning JavaScript programming language. I understand that it's not that hard.
+       I went through a JavaScript bootcamp and I have a diploma. It was quite interesting. 
+       Not long ago I started working with localStorage and CRUD. 
+       We put the two together and made a little program called "TODO list".
+        I started using the bootstrap library.
+         I will leave you a link to go through and you will be able to see some games made by me
     </p>
+    <p><a href="https://github.com/alexandragrosul" target="blank">github.com/alexandragrosul</a></p>
   </section>
   <section>
-    <h2 id="picture"> Pictura </h2>
-    <p>Eu merg la scoala de pictura.Cand am avut 7 ani desenul meu a fost trimis in Europa, la Iasi (acolo a fost in airoport pus) Si inca in cateva tari</p>
+    <h2 id="music"> Music </h2>
+    <p>I'm learning to play the piano. I sing major songs and some minor ones. The favorite song is by Eugen Doga "An old book". Now I'm taking my music exam.</p>
+  </section>
+  <section>
+    <h2 id="picture"> Drawing </h2>
+    <p>I go to painting school. Now I am already in the 2nd grade at this school. I really like it because the drawing you draw changes with each dash added. And I also have a very good teacher. She talks to us like her peers. She puts us a song of concentration and at the break a dance song to dance with her. It is very wonderful when from a simple sheet you get a range of mixed colors that fit perfectly in the drawing. It doesn't matter at what age you go painting, drawing and enjoying it</p>
     <div class="images">
-      <div><a data-fancybox="gallery" href="images/pictura1.jpg"><img src="images/pictura1.jpg" alt=""></a></div>  
+      <div id="picturesGallery">
+        <a data-fancybox="gallery" href="images/pictura1.jpg"><img src="images/pictura1.jpg" alt=""></a>
+        <a data-fancybox="gallery" href="images/pictura1.jpg"><img src="images/pictura1.jpg" alt=""></a>
+        <a data-fancybox="gallery" href="images/pictura1.jpg"><img src="images/pictura1.jpg" alt=""></a>
+        <a data-fancybox="gallery" href="images/pictura1.jpg"><img src="images/pictura1.jpg" alt=""></a>
+      </div>  
     </div>
   </section>
   <section>
-    <h2 id="sculptura"> Sculptura </h2>
-    <p>Eu de asemenea vineri dupa pictura am sculptura.Acolo am facut o masca de leu, mar si para, o pisica , lebada, un pescar si fac o vaza</p>
+    <h2 id="sculptura"> Sculpture </h2>
+    <p>I also have sculpture on Friday after painting. The teacher is also wonderful, and it is a pleasure to create with a teacher who helps you in any case.</p>
     <div class="images">
       <div><a data-fancybox="gallery" href="images/sculptura1.jpg"><img src="images/sculptura1.jpg" alt=""></a></div>
       <div><a data-fancybox="gallery" href="images/sculptura2.jpg"><img src="images/sculptura2.jpg" alt=""></a></div>
@@ -63,8 +106,8 @@
     </div>
   </section>
   <section>
-    <h2 id="cat"> Motanul meu </h2>
-    <p>Eu am un motan pe nume Simba.El este fara blana, este foarte jucaus si prietenos.De acea ca el este fara blana bumica i-a facut costume care ii tin de cald.Iarna el sta tota ziua pe calorifer si dorme.E amuzant sa te joci cu el </p>
+    <h2 id="cat"> My cat </h2>
+    <p>I have a cat named Simba. He is of the Sphinx breed and is very playful. I like to play with him. When I write code or draw it is next to me. In winter or when it is cold, we dress him in the vest made by his grandmother. It's so cutel </p>
     <div class="images">
       <div><a data-fancybox="gallery" href="images/simba1.jpg"><img src="images/simba1.jpg" alt=""></a></div>
       <div><a data-fancybox="gallery" href="images/simba2.jpg"><img src="images/simba2.jpg" alt=""></a></div>
@@ -89,6 +132,7 @@
 
   
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   
 </body>
 </html>
