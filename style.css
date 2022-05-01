@@ -1,8 +1,8 @@
 body { 
-   background-color:  rgb(182, 255, 182);
+   background-color:  rgb(235, 222, 232);
     margin-left: auto;
     margin-right: auto;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Montserrat', sans-serif;
   }
 
 body.dark-theme {
@@ -10,9 +10,7 @@ body.dark-theme {
   background-color: #121212;
 }
 
-p {
-  font-size: 30px;
-}
+
 
 h1 {
   font-size: 50px;
@@ -23,11 +21,11 @@ h2 {
 }
 
 header {
-  background-color: rgb(26, 70, 5);
+  background-color: rgb(245, 119, 245);
   padding: 30px;
   text-align: center;
   font-size: 35px;
-  color: rgb(162, 221, 198);
+  color: rgb(131, 66, 161);
 }
 
 body.dark-theme header {
@@ -60,14 +58,14 @@ body.dark-theme footer {
 
 
 footer {
-  background-color: rgb(26, 70, 5);
+  background-color: rgb(210, 179, 211);
   padding: 10px;
   text-align: center;
   color: white;
 }
 
 section {
-    padding: 50px;
+    padding: 25px;
 }
 .container {
   padding-right: 15px;
@@ -85,7 +83,7 @@ section {
 }
 
 .menu div {
-  background-color: darkgreen;
+  background-color: rgb(230, 109, 201);
   font-size: larger;
   color: white;
   padding: 15px;
@@ -97,7 +95,7 @@ section {
 }
 
 .menu div:hover {
-  background-color: yellowgreen;
+  background-color: rgb(196, 85, 211);
   border-style: solid ;
 }
 
@@ -116,4 +114,14 @@ section {
 
 .images div {
   padding: 15px;
+}
+
+.nav-link {
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size:30px
+  }
 }
