@@ -1,0 +1,18 @@
+{
+    "cat" : [
+        {
+            "title": "Cat",
+            "link": "images/pictura1.jpg",
+            "date": "25.06.2020"
+        },
+        {
+            "title": "Cat",
+            "link": "images/pictura1.jpg",
+            "date": "25.06.2020"
+        }
+    ],
+    "picture" : [
+        "https://lh3.googleusercontent.com/pw/AM-JKLXYhEcYAn6laH-_vK6ilRNg82SZsBmdH4C-CDMX_t93Rk1DWAC0WxsqkKx-G8RlSZlUtTOH4DRX8rniOeIBFj_SjjxevMhn4nNcliR49VgE8U5khbite9SzuJAqxBczOjS00Zg0NnQnDPu7SjD9PQ2lLQ=w469-h625-no"
+    ],
+    "sculpture" : []    
+}
