@@ -1,60 +1,68 @@
+import {
+    buildGallery,
+    topFunction
+} from './scripts/functions.js';
+
+
 const themeSwitch = document.getElementById("themeSwitch");
 const themeIconPath = themeSwitch.src.split('/')
 const themeIconImg = themeIconPath[themeIconPath.length - 1]
-console.log(localStorage.getItem('isDark'))
 let isDarkTheme = false
-if(localStorage.getItem('isDark') === null){
+
+if (localStorage.getItem('isDark') === null) {
     localStorage.setItem('isDark', 'false')
 } else {
     isDarkTheme = JSON.parse(localStorage.getItem('isDark'))
 }
 
-if(isDarkTheme){
-    themeSwitch.src="images/sun.png"
+if (isDarkTheme) {
+    themeSwitch.src = "images/sun.png"
     document.body.classList.toggle('dark-theme');
 }
-// const moon = document.getElementsByClassName('btn-toggle')[1];
+
 themeSwitch.addEventListener("click", function () {
-
-    console.log(isDarkTheme)
     isDarkTheme = !isDarkTheme
-    localStorage.setItem('isDark',isDarkTheme ? 'true' : 'false')
-    isDarkTheme ? themeSwitch.src="images/sun.png" : themeSwitch.src="images/moon.png"
-
-    
+    localStorage.setItem('isDark', isDarkTheme ? 'true' : 'false')
+    isDarkTheme ? themeSwitch.src = "images/sun.png" : themeSwitch.src = "images/moon.png"
     document.body.classList.toggle('dark-theme');
 })
 
 const photoGallery = {
-    cat : null,
-    picture : null,
-    sculpture : null
+    cat: null,
+    picture: null,
+    sculpture: null
 }
 
+//build picture gallery 
+const picturesGallery = document.getElementById('picturesGallery')
+const sculptureGallery = document.getElementById('picturesGallery')
+const catGallery = document.getElementById('picturesGallery')
 
 
-/**
- * Build arr of images for gallery.
- * @param {array} list  - The colection of images.
- */
-const buildGallery = (list) => {
-    console.log(list)
-    let result = []
-    for (const image of list) {
-        result.push(`<a data-fancybox='gallery' href='${image.link}'><img src='${image.link}' alt='${image.title}'></a>`)
-    
+
+const buttonToTop = document.getElementById('myBtn')
+buttonToTop.addEventListener('click', topFunction)
+
+const scrollFunction = () => {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        buttonToTop.style.display = 'block'
+    } else {
+        buttonToTop.style.display = 'none'
     }
-    return result;
 }
+
+
+window.onscroll = () => scrollFunction()
+
 
 fetch("gallery.json")
-  .then(response => response.json())
-  .then(json => {
-      photoGallery.cat = json.cat
-      photoGallery.picture = json.picture
-      photoGallery.sculpture = json.sculpture
-      console.dir(buildGallery(photoGallery.cat));
-  });
-
-
- 
+    .then(response => response.json())
+    .then(json => {
+        photoGallery.cat = json.cat
+        photoGallery.picture = json.picture
+        photoGallery.sculpture = json.sculpture
+        for (const imgStr of buildGallery(photoGallery.picture)) {
+            picturesGallery.innerHTML += imgStr            
+        }
+        
+    });
