@@ -1,7 +1,7 @@
 import {
     buildGallery,
     topFunction
-} from './scripts/functions.js';
+} from './functions.js';
 
 
 const themeSwitch = document.getElementById("themeSwitch");
