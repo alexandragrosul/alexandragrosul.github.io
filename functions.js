@@ -9,7 +9,7 @@ function sum(a, b) {
 export const buildGallery = (list) => {
     let result = []
     for (const image of list) {
-        result.push(`<a data-fancybox='gallery' href='${image.link}'><img src='${image.link}' alt='${image.title}'></a>`)
+        result.push(`<div class="m-2"><a data-fancybox='gallery' href='${image.link}'><img src='${image.link}'  alt='${image.title}'></a></div>`)
     }
     return result;
 }
