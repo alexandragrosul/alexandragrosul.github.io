@@ -1,17 +1,43 @@
 {
-    "cat" : [
+    "picture" : [
         {
-            "title": "Cat",
+            "title": "Iarna",
             "link": "images/pictura1.jpg",
             "date": "25.06.2020"
         },
         {
-            "title": "Cat",
-            "link": "images/pictura1.jpg",
+            "title": "Lime",
+            "link": "https://lh3.googleusercontent.com/pw/AM-JKLXGY2UHYSd_sefdvrzP_iOFCBjc8MuRpC_Sd1IkpYS6U0o439g5yLVnY-PNHZmjzHEkfvQ3-miB0i_DI1YuEmqibpt-wkS4iKy1GNJETnuHyX8tuAoAstg_IQIa0BgxwtLVbr3TAFU49_X-Z88ANY21UA=w523-h569-no?authuser=0",
+            "date": "25.06.2020"
+        },
+        {
+            "title": "Ceainic",
+            "link": "https://lh3.googleusercontent.com/pw/AM-JKLXYhEcYAn6laH-_vK6ilRNg82SZsBmdH4C-CDMX_t93Rk1DWAC0WxsqkKx-G8RlSZlUtTOH4DRX8rniOeIBFj_SjjxevMhn4nNcliR49VgE8U5khbite9SzuJAqxBczOjS00Zg0NnQnDPu7SjD9PQ2lLQ=w469-h625-no",
+            "date": "25.06.2020"
+        },
+        {
+            "title": "Eye",
+            "link": "https://lh3.googleusercontent.com/pw/AM-JKLUAEx-eFKw0c6PEd41ZH4oPIgE9v7SXkeIYJpLoQQ_c8je71O7Kwmw1elAVwC0kYmDTKbaBaNOxBOFcZ3Otmg658Ps43J7a-GjxhBHXwALKG0SVEs6msnTf-EIiHuMrU4m30pODHNjxmsbmNkBp7pKj9g=w661-h881-no?authuser=0",
+            "date": "25.06.2020"
+        },
+        {
+            "title": "Zoo",
+            "link": "https://lh3.googleusercontent.com/pw/AM-JKLVquPdOLg7MDcQWCahtox0qD-AA8vSSos2yVA_ZsBsnpTMpM4YEasrtyiBJohTlQx9A5RY7w1qROIZqXvXekqRfOK6xlFFXowZzhgz3fhQ9bf0OcQmL7tNNuPo2gFVBCnFAgfSiDecfjiMCbPG11wnTyg=w1175-h881-no?authuser=0",
+            "date": "25.06.2020"
+        },
+        {
+            "title": "Composition",
+            "link": "https://lh3.googleusercontent.com/pw/AM-JKLWkHhS5wsQ1KEWCcnddDbWeM1zS4nh5wyyyhGUddYQd5fcqodZcaJvOTR12A34OWDchbRIEI6_RHB4tkT7GalaRHiXpz8vC6KLcLcqe1EGzSnlZnr-Bya7GfnPwKaKrIbsIv2V8mgg2AMI7iJMzh1gf4Q=w464-h824-no?authuser=0",
+            "date": "25.06.2020"
+        },
+        {
+            "title": "Angel",
+            "link": "https://lh3.googleusercontent.com/pw/AM-JKLXAkvjnq8Ml7XypLIWOfjH9zeWclMOubbuATXaWyl92ZRPLSpyw9lSh8RGAM_G68kTpeoxXf1WVvakYJ3-NUjFy_xNu173Id7Jw4lb5SI40p1MW195Ryy5YbHxMPA0FwVS2O7zZowS6G1X6PugrH6oVtQ=w815-h824-no?authuser=0",
             "date": "25.06.2020"
         }
+      
     ],
-    "picture" : [
+    "cat" : [
         "https://lh3.googleusercontent.com/pw/AM-JKLXYhEcYAn6laH-_vK6ilRNg82SZsBmdH4C-CDMX_t93Rk1DWAC0WxsqkKx-G8RlSZlUtTOH4DRX8rniOeIBFj_SjjxevMhn4nNcliR49VgE8U5khbite9SzuJAqxBczOjS00Zg0NnQnDPu7SjD9PQ2lLQ=w469-h625-no"
     ],
     "sculpture" : []    
